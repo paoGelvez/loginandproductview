@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,3);
+
+
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline:none ; border: none;/*para que se quite la linea de subrayado que se pone por defecto en una lista*/
+    text-decoration: none;/*subrayado ninguno*/
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; /*permite ocultar elementos sin que su espacio sea ocultado por otros y colapsar filas o columnas de una tabla*/
+    scroll-padding-top: 9rem; /*permite al autor excluir regiones del purto de desplazamiento que estan oscurecidas por otro contenido como barras de herramientas o laterales de posicion fija*/
+    scroll-behavior: smooth; /*es un efecto de transicion entre secciones de una misma pagina que mejora el aspecto visual evitando cambios bruscos entre secciones */
+
+}
+/*nos da control sobre las dimensiones generales, ancho para el scroll vertical,alto para el scroll horizontal. es clave para realizar la personalizacion */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+/* es el contenedor general de todo el resto de los elementos, botones incluidos.*/
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.logo1{
+    text-align: center;
+   
+}
+.formulario {
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background:url("Imágenes de productos-20220808T203432Z-001/Imágenes de productos/productos - Login.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario .form{
+    height: 100%;
+    display: block;
+    align-items: center;
+    color: #000;
+    border-radius: 5px;
+    background-position: center;
+    margin-left: 40%;
+
+}
+
+.formulario h1{
+
+    margin: 0 0 25px;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+}
+
+
+
+.inputBox{
+    display: block;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+#ingresar{
+    background-color: dodgerblue;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
